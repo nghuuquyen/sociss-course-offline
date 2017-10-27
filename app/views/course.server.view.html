@@ -1,0 +1,13 @@
+<img src="http://127.0.0.1:5555/images/bg.jpg" />
+
+<h1>{{course.name}}</h1>
+<p>{{{course.content}}}</p>
+
+<hr/>
+{{#each timeline.chapters}}
+<ul>
+  {{#each this.lessons}}
+  <li>{{this.name}}</li>
+  {{/each}}
+</ul>
+{{/each}}
